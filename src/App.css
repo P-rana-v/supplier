@@ -1,38 +1,248 @@
-.App {
-  text-align: center;
+html,body,#root {
+    width: 100%;
+    height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: 'Poppins',sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+    width: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo2{
+    position: fixed;
+    width: 150px;
+    top:20px;
+    left: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.warning {
+    font-size: 8px;
+    color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav {
+    margin: none;
+    width: 100%;
+    background-color: beige;
+    height: 12%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav button {
+    margin-right: 20px;
+    width: 70px;
+    background-color: white;
+    border: none;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.nav button:hover {
+    background-color: rgb(255, 255, 236);
+}
+
+.nav * {
+    font-size: 12px;
+    font-weight: 200;;
+}
+
+.centering {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    height: 88%;
+    top: 12%;
+    overflow: scroll;
+}
+
+.formClass {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.inputField {
+    border-radius: 15px;
+    font-size: 16px;
+    height: 30px;
+    width: 200px;
+    border: none;
+    padding-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.submit {
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: white;
+    border: none;
+    margin-left: 50px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.submit:hover,.button-2:hover {
+    background-color: beige;
+}
+
+.browse::file-selector-button {
+    height: 30px;
+    width: 100px;
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    border-radius: 10px;
+}
+
+.browse::file-selector-button:hover {
+    background-color: beige;
+}
+
+.login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-flex {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+}
+
+.login-flex > div {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    justify-content: space-between;
+}
+
+.login-flex input {
+    width: 100%;
+}
+
+.login-flex > div:nth-last-of-type(1) {
+    flex-direction: row;
+}
+
+.login-flex button{
+    background-color: beige;
+    height: 40px;
+    width: 45%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.login-flex button:hover {
+    background-color: rgb(251, 251, 178);
+}
+
+.login-flex button:disabled {
+    background-color: rgb(175, 175, 175,0.2);
+}
+
+.signup {
+    height: 250px;
+}
+
+.button-2 {
+    height: 40px;
+    width: 150px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    position: fixed;
+    top:13%;
+    left:45%;
+}
+
+.results {
+    height: 600px;
+    width: 300px;
+    margin-right: 50px;
+}
+
+.results > div {
+    padding: 10px;
+}
+
+.results img {
+    height: 200px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.results > div > * {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+.item {
+    font-size: 26px;
+    line-height: 26px;
+}
+
+.name {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.phone {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.email {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.results {
+    width: 350px;
+    height: 400px;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    border-radius: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top : 50px;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.remove {
+    height: 30px;
+    width: 100px;
+    border: none;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    border-radius: 15px;
+}
+
+.remove:hover {
+    background-color: rgb(224, 224, 224);
 }
